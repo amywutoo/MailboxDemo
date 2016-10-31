@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "MailboxDemo/MailboxViewController.swift"
-            timestampString = "499581623.170684"
+            timestampString = "499590138.999364"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "47"
-            endingLineNumber = "47"
+            startingLineNumber = "59"
+            endingLineNumber = "59"
             landmarkName = "panMessageParent(_:)"
             landmarkType = "7">
          </BreakpointContent>

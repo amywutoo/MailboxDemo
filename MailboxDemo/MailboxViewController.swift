@@ -14,17 +14,26 @@ class MailboxViewController: UIViewController, UIScrollViewDelegate, UIGestureRe
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var messageParentView: UIView!
-    @IBOutlet weak var backgroundView: UIImageView!
     @IBOutlet weak var messageImage: UIImageView!
     @IBOutlet weak var laterImage: UIImageView!
+    @IBOutlet weak var yellowView: UIView!
+    @IBOutlet weak var brownView: UIView!
+    @IBOutlet weak var greenView: UIView!
+    @IBOutlet weak var listImage: UIImageView!
     @IBOutlet weak var archiveImage: UIImageView!
+    @IBOutlet weak var backgroundView: UIView!
     
     var messageImageOriginalCenter: CGPoint!
+    var archiveImageOriginalCenter: CGPoint!
+    var laterImageOriginalCenter: CGPoint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         scrollView.contentSize = imageView.frame.size
+        
+        archiveImage.alpha = 1
+        laterImage.alpha  = 1
 
         // Do any additional setup after loading the view.
     }
@@ -36,27 +45,38 @@ class MailboxViewController: UIViewController, UIScrollViewDelegate, UIGestureRe
     
     @IBAction func panMessageParent(_ sender: UIPanGestureRecognizer) {
         
-        let location = sender.location(in: view)
+        //let location = sender.location(in: view)
         let velocity = sender.velocity(in: view)
         let translation = sender.translation(in: view)
         
+        
         if sender.state == .began {
             //print("Gesture began")
-            
-            
+            messageImageOriginalCenter = messageImage.center
+            archiveImageOriginalCenter = archiveImage.center
+            laterImageOriginalCenter = laterImage.center
+
             
         } else if sender.state == .changed {
             //print("Gesture is changing")
             
-            laterImage.alpha = 0.2
-            archiveImage.alpha = 0.2
+            messageImage.center = CGPoint(x: messageImageOriginalCenter.x + translation.x, y: messageImageOriginalCenter.y)
             
-            laterImage.image = UIImage(named: "later_icon")
-            archiveImage.image = UIImage(named: "archive_icon")
-            
-            backgroundView.backgroundColor = UIColor.lightGray
-            
+            if velocity.x < 0 && translation.x < -65 {
+                
+                laterImage.center = CGPoint(x: laterImageOriginalCenter.x + translation.x, y: laterImageOriginalCenter.y)
+                
+            } else if velocity.x >= 0 && translation.x >= 65 {
+                
+                archiveImage.center = CGPoint(x: archiveImageOriginalCenter.x + translation.x , y: archiveImageOriginalCenter.y)
+                
+            } else {
+                
+                archiveImage.center = CGPoint(x: archiveImageOriginalCenter.x, y: archiveImageOriginalCenter.y)
+                laterImage.center = CGPoint(x: laterImageOriginalCenter.x, y: laterImageOriginalCenter.y)
 
+            }
+            
 
         } else if sender.state == .ended {
             //print("Gesture ended")
