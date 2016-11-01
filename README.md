@@ -41,8 +41,9 @@ Time spent: `25`
 
 Please list two areas of the assignment you'd like to **discuss further with your peers** during the next class (examples include better ways to implement something, how to extend your app in certain ways, etc):
 
-1. 
-2. 
+1. I could not completed this homework assignment. I would love to see the different ways other students tackled the pan gesture while animating the color bars and showing/hiding the icons.
+
+2. I watched Tim's video and looked over course materials. I met with past alum for 1on1 and looked at their Github repos, but it was hard to grasp what they did versus the method I was doing. I don't want to just copy and paste because I don't think I'm actually learning or understanding what is being written in the code. I wonder how others are fairing in class. It seems like others are catching on much faster. I want to utilize my time better. For example, I don't think spending 25 hours on this assignment did me any good because it's not about how long I spent, but how should I go about breaking down the problem in steps.
 
 ### Video Walkthrough 
 
