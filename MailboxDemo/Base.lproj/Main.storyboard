@@ -18,7 +18,7 @@
                                 <frame key="frameInset" width="375" height="667"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" image="nav" id="3Ra-nr-QIe">
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="nav" id="3Ra-nr-QIe">
                                         <frame key="frameInset" width="375" height="65"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
@@ -26,11 +26,11 @@
                                         <frame key="frameInset" minY="65" width="375" height="602"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" image="search" id="YuU-ej-Fd0">
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="search" id="YuU-ej-Fd0">
                                                 <rect key="frame" x="0.0" y="37" width="375" height="42"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </imageView>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" image="help_label" id="cPN-uP-y7N">
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="help_label" id="cPN-uP-y7N">
                                                 <rect key="frame" x="0.0" y="0.0" width="375" height="37"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </imageView>
@@ -42,7 +42,7 @@
                                                         <frame key="frameInset" minX="20" minY="31" width="25" height="25"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                     </imageView>
-                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" image="message" id="95A-gd-Mjz">
+                                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="message" id="95A-gd-Mjz">
                                                         <frame key="frameInset" width="375" height="86"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <gestureRecognizers/>
@@ -53,8 +53,8 @@
                                                 </subviews>
                                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             </view>
-                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" image="feed" id="G7f-Mo-VgI">
-                                                <rect key="frame" x="0.0" y="164" width="375" height="1202"/>
+                                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleAspectFill" misplaced="YES" image="feed" id="G7f-Mo-VgI">
+                                                <rect key="frame" x="0.0" y="165" width="375" height="1202"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                             </imageView>
                                         </subviews>

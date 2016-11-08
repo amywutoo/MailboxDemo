@@ -27,10 +27,10 @@ class MailboxViewController: UIViewController {
     let grayColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
     // >60
     let laterIcon = #imageLiteral(resourceName: "later_icon")
-    let yellowColor = #colorLiteral(red: 0.9686274529, green: 0.78039217, blue: 0.3450980484, alpha: 1)
+    let greenColor = #colorLiteral(red: 0, green: 0.9768045545, blue: 0, alpha: 1)
     // > 260
     let listIcon = #imageLiteral(resourceName: "list_icon")
-    let brownColor = #colorLiteral(red: 0.3098039329, green: 0.2039215714, blue: 0.03921568766, alpha: 1)
+    let redColor = #colorLiteral(red: 1, green: 0.1491314173, blue: 0, alpha: 1)
     
     
     var messageViewOriginalCenter: CGPoint!
@@ -69,16 +69,16 @@ class MailboxViewController: UIViewController {
             messageImageView.center.x = messageViewOriginalCenter.x + translation.x
             
             if translation.x > 260 {
-                messageContainerView.backgroundColor = brownColor
-                leftSideIcon.image = listIcon
+                messageContainerView.backgroundColor = redColor
+                leftSideIcon.image = #imageLiteral(resourceName: "delete_icon")
                 leftSideIcon.center.x = messageImageView.frame.origin.x - 30
             } else if translation.x > 60 {
-                messageContainerView.backgroundColor = yellowColor
-                leftSideIcon.image = laterIcon
+                messageContainerView.backgroundColor = greenColor
+                leftSideIcon.image = #imageLiteral(resourceName: "archive_nav_icon")
                 leftSideIcon.center.x = messageImageView.frame.origin.x - 30
             } else if translation.x >= -60 && translation.x <= 60 {
                 messageContainerView.backgroundColor = grayColor
-                leftSideIcon.image = laterIcon
+                leftSideIcon.image = #imageLiteral(resourceName: "archive_nav_icon")
             }
             
             
